@@ -17,7 +17,7 @@
   var DISMISSED_COOKIE = 'cookieconsent_dismissed';
 
   // The path to built in themes (s3 bucket)
-  var THEME_BUCKET_PATH = '//s3.amazonaws.com/cc.silktide.com/';
+  var THEME_BUCKET_PATH = '/cookieconsent/';
 
   // No point going further if they've already dismissed.
   if (document.cookie.indexOf(DISMISSED_COOKIE) > -1) {
@@ -243,7 +243,6 @@
 
         '<p class="cc_message">{{options.message}} <a data-cc-if="options.link" class="cc_more_info" href="{{options.link || "#null"}}">{{options.learnMore}}</a></p>',
 
-        '<a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a>',
         '</div>',
         '</div>'
       ]
